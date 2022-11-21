@@ -1,0 +1,170 @@
+package diagrama.model;
+
+import abstracta.AbstractaFactory;
+import concreta.MKJAgregacion;
+import concreta.MKJAsociacion;
+import concreta.MKJAtributo;
+import concreta.MKJClase;
+import concreta.MKJConteinment;
+import concreta.MKJDiagramaClases;
+import concreta.MKJHerencia;
+import concreta.MKJInterface;
+import concreta.MKJMetodo;
+import concreta.MKJPaquete;
+import concreta.ModelFactory;
+import concreta.Workspace;
+
+public class TransformacionM2M {
+
+	private ModelFactory modelFactoryConcreta;
+	private abstracta.ModelFactory modelFactoryAbstracta;
+
+	public TransformacionM2M(ModelFactory modelFactoryConcreta, abstracta.ModelFactory modelFactoryAbstracta) {
+		super();
+		this.modelFactoryConcreta = modelFactoryConcreta;
+		this.modelFactoryAbstracta = modelFactoryAbstracta;
+	}
+
+	public String transformarM2M() {
+		String mensaje = "Se ha realizado la transformacion M2M";
+		if (modelFactoryAbstracta.getListTodosUserStorys().size() != 0) {
+			modelFactoryAbstracta.getListTodosUserStorys().clear();
+			modelFactoryAbstracta.getListTodosWordspace().clear();
+			modelFactoryAbstracta.getListWorkspace().clear();
+		}
+
+		for (Workspace workspaceConcreta : modelFactoryConcreta.getListaDiagramas()) {
+			// Crear los paquetes
+			for (MKJPaquete paquete : diagramaConcreta.getListaPaquetes()) {
+				crearPaquete(paquete);
+			}
+			
+			for (MKJPaquete paquete : diagramaConcreta.getListaPaquetes()) {
+				crearPaquete(paquete);
+			}
+		}
+
+		return mensaje;
+	}
+
+	private void crearClase(MKJClase clase) {
+		String ruta = clase.getRuta();
+		String name = clase.getNombre();
+
+		abstracta.MKJClase claseAbstracta = obtenerClaseAbstracta(name, ruta);
+		if (claseAbstracta == null) {
+			abstracta.MKJClase mkjClase = AbstractaFactory.eINSTANCE.createMKJClase();
+			mkjClase.setNombre(clase.getNombre());
+			mkjClase.setRuta(clase.getRuta());
+
+			for (MKJAtributo atributo : clase.getAtributos()) {
+				abstracta.MKJAtributo mkjAtributo = AbstractaFactory.eINSTANCE.createMKJAtributo();
+				mkjAtributo.setNombre(atributo.getNombre());
+				mkjClase.getAtributos().add(mkjAtributo);
+			}
+
+			for (MKJMetodo metodo : clase.getMetodos()) {
+				abstracta.MKJMetodo mkjMetodo = AbstractaFactory.eINSTANCE.createMKJMetodo();
+				mkjMetodo.setNombre(metodo.getNombre());
+				mkjMetodo.setSemantics(metodo.getSemantics());
+				mkjClase.getMetodos().add(mkjMetodo);
+			}
+
+			modelFactoryAbstracta.getListaTodasLasClases().add(mkjClase);
+			abstracta.MKJPaquete paquetePadre = obtenerPaquete(ruta);
+			paquetePadre.getClases().add(mkjClase);
+		}
+	}
+
+	private abstracta.MKJPaquete obtenerPaquete(String ruta) {
+		for (abstracta.MKJPaquete mkjPaquete : modelFactoryAbstracta.getListaTodosLosPaquetes()) {
+			String rutaAux = mkjPaquete.getRuta() + mkjPaquete.getNombre() + "/";
+			if (rutaAux.equals(ruta)) {
+				return mkjPaquete;
+			}
+		}
+		return null;
+	}
+
+	private abstracta.MKJClase obtenerClaseAbstracta(String name, String ruta) {
+
+		abstracta.MKJPaquete mkjPaquete = modelFactoryAbstracta.getPaquetes().get(0);
+
+		for (abstracta.MKJClase mkjClase : mkjPaquete.getClases()) {
+			if (mkjClase.getNombre().equals(name)) {
+				return mkjClase;
+			}
+		}
+		for (abstracta.MKJPaquete mkjPaquete2 : mkjPaquete.getPaquetes()) {
+			abstracta.MKJClase mkjClase = obtenerClasePaquete(mkjPaquete2, name, ruta);
+			if (mkjClase != null) {
+				return mkjClase;
+			}
+		}
+		return null;
+	}
+
+	private abstracta.MKJClase obtenerClasePaquete(abstracta.MKJPaquete mkjPaquete, String name, String ruta) {
+		// TODO Auto-generated method stub
+		for (abstracta.MKJClase mkjClase : mkjPaquete.getClases()) {
+			if (mkjClase.getNombre().equals(name)) {
+				return mkjClase;
+			}
+		}
+		for (abstracta.MKJPaquete mkjPaquete2 : mkjPaquete.getPaquetes()) {
+			abstracta.MKJClase mkjClase = obtenerClasePaquete(mkjPaquete2, name, ruta);
+			if (mkjClase != null) {
+				return mkjClase;
+			}
+		}
+		return null;
+	}
+
+	private void crearPaquete(MKJPaquete paquete) {
+
+		String ruta = paquete.getRuta() + paquete.getNombre();
+		String[] split = ruta.split("/");
+		abstracta.MKJPaquete paqueteParent = null;
+
+		String nuevaRuta = "";
+		for (int i = 0; i < split.length; i++) {
+			String rutaNombrePaquete = split[i];
+			paqueteParent = obtenerPaqueteAbstracta(rutaNombrePaquete, nuevaRuta, paqueteParent);
+			nuevaRuta += split[i] + "/";
+		}
+	}
+
+	private abstracta.MKJPaquete obtenerPaqueteAbstracta(String nombrePaquete, String nuevaRuta,
+			abstracta.MKJPaquete paqueteParent) {
+
+		if (paqueteParent == null) {
+			for (int i = 0; i < modelFactoryAbstracta.getPaquetes().size(); i++) {
+				if (modelFactoryAbstracta.getPaquetes().get(i).getNombre().equals(nombrePaquete)) {
+					return modelFactoryAbstracta.getPaquetes().get(i);
+				}
+			}
+			abstracta.MKJPaquete nuevoPackage = AbstractaFactory.eINSTANCE.createMKJPaquete();
+			nuevoPackage.setNombre(nombrePaquete);
+			nuevoPackage.setRuta(nuevaRuta);
+			modelFactoryAbstracta.getPaquetes().add(nuevoPackage);
+			modelFactoryAbstracta.getListaTodosLosPaquetes().add(nuevoPackage);
+			return nuevoPackage;
+
+		} else {
+			for (int i = 0; i < paqueteParent.getPaquetes().size(); i++) {
+				if (paqueteParent.getPaquetes().get(i).getNombre().equals(nombrePaquete)) {
+					if (paqueteParent.getPaquetes().get(i).getRuta().equals(nuevaRuta)) {
+						return paqueteParent.getPaquetes().get(i);
+					}
+				}
+			}
+		}
+
+		abstracta.MKJPaquete nuevoPackage = AbstractaFactory.eINSTANCE.createMKJPaquete();
+		nuevoPackage.setNombre(nombrePaquete);
+		nuevoPackage.setRuta(nuevaRuta);
+		paqueteParent.getPaquetes().add(nuevoPackage);
+		modelFactoryAbstracta.getListaTodosLosPaquetes().add(nuevoPackage);
+		return nuevoPackage;
+	}
+}

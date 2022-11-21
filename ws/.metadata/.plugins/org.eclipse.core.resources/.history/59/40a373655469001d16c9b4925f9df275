@@ -1,0 +1,46 @@
+#
+
+pluginName = Concreta Edit Support
+providerName = www.example.org
+
+_UI_CreateChild_text = {0}
+_UI_CreateChild_text2 = {1} {0}
+_UI_CreateChild_text3 = {1}
+_UI_CreateChild_tooltip = Create New {0} Under {1} Feature
+_UI_CreateChild_description = Create a new child of type {0} for the {1} feature of the selected {2}.
+_UI_CreateSibling_description = Create a new sibling of type {0} for the selected {2}, under the {1} feature of their parent.
+
+_UI_PropertyDescriptor_description = The {0} of the {1}
+
+_UI_ModelFactory_type = Model Factory
+_UI_Workspace_type = Workspace
+_UI_UserStory_type = User Story
+_UI_Como_type = Como
+_UI_Quiero_type = Quiero
+_UI_Para_type = Para
+_UI_Unknown_type = Object
+
+_UI_Unknown_datatype= Value
+
+_UI_ModelFactory_nombre_feature = Nombre
+_UI_ModelFactory_ruta_feature = Ruta
+_UI_ModelFactory_listWorkspace_feature = List Workspace
+_UI_Workspace_nombre_feature = Nombre
+_UI_Workspace_listUserStorys_feature = List User Storys
+_UI_UserStory_nombre_feature = Nombre
+_UI_UserStory_identificador_feature = Identificador
+_UI_UserStory_descripcion_feature = Descripcion
+_UI_UserStory_estimacion_feature = Estimacion
+_UI_UserStory_prioridad_feature = Prioridad
+_UI_UserStory_theComo_feature = The Como
+_UI_UserStory_theQuiero_feature = The Quiero
+_UI_UserStory_thePara_feature = The Para
+_UI_Como_nombre_feature = Nombre
+_UI_Quiero_nombre_feature = Nombre
+_UI_Para_nombre_feature = Nombre
+_UI_Unknown_feature = Unspecified
+
+_UI_Como_descripcion_feature = Descripcion
+_UI_Quiero_descripcion_feature = Descripcion
+_UI_Para_descripcion_feature = Descripcion
+_UI_UserStory_riesgo_feature = Riesgo

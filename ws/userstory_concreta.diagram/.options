@@ -1,0 +1,7 @@
+# Tracing options for the userstory_concreta.diagram plug-in
+
+# Common issues
+userstory_concreta.diagram/debug=false
+
+# Visual IDs
+userstory_concreta.diagram/debug/visualID=false

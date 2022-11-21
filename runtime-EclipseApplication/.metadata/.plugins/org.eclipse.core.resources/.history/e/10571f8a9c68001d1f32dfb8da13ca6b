@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:concreta="concreta" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_gbNUsGiWEe2IS6l9V2ZPCg" type="Concreta" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_geQBoGiWEe2IS6l9V2ZPCg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_geQosGiWEe2IS6l9V2ZPCg" type="5004"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_geQosWiWEe2IS6l9V2ZPCg" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_geQosmiWEe2IS6l9V2ZPCg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_geQos2iWEe2IS6l9V2ZPCg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_geQotGiWEe2IS6l9V2ZPCg" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_geQotWiWEe2IS6l9V2ZPCg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_geQotmiWEe2IS6l9V2ZPCg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_geQot2iWEe2IS6l9V2ZPCg" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_geQouGiWEe2IS6l9V2ZPCg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_geQouWiWEe2IS6l9V2ZPCg"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_geQBoWiWEe2IS6l9V2ZPCg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_geQBomiWEe2IS6l9V2ZPCg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_geQBo2iWEe2IS6l9V2ZPCg"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_geQBpGiWEe2IS6l9V2ZPCg"/>
+    <element xmi:type="concreta:UserStory" href="My.concreta#//@listWorkspace.0/@listUserStorys.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_geQBpWiWEe2IS6l9V2ZPCg" x="210" y="72" width="265" height="175"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_gbNUsWiWEe2IS6l9V2ZPCg"/>
+  <element xmi:type="concreta:Workspace" href="My.concreta#//@listWorkspace.0"/>
+</notation:Diagram>

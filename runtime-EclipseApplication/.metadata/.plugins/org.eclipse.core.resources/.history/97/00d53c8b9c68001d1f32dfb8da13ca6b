@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:concreta="concreta" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_N70M0GfIEe22fLdHkU1QUA" type="Concreta" name="model.concreta_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_hO2cYGfLEe2vkKAY6CZicQ" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_hO3DcGfLEe2vkKAY6CZicQ" type="5004"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_hO3DcWfLEe2vkKAY6CZicQ" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_iL4FUGfLEe2vkKAY6CZicQ" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_iL4sZGfLEe2vkKAY6CZicQ" type="5001"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_iL4sYGfLEe2vkKAY6CZicQ"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_iL4sYWfLEe2vkKAY6CZicQ" fontName="Segoe UI"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_iL4sYmfLEe2vkKAY6CZicQ"/>
+        <element xmi:type="concreta:Como" href="default.concreta#//@listUserStorys.0/@theComo"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iL4sY2fLEe2vkKAY6CZicQ"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_hO3DcmfLEe2vkKAY6CZicQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_hO3Dc2fLEe2vkKAY6CZicQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_hO3DdGfLEe2vkKAY6CZicQ" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_hO3DdWfLEe2vkKAY6CZicQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_hO3DdmfLEe2vkKAY6CZicQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_hO3Dd2fLEe2vkKAY6CZicQ" type="7003">
+      <children xmi:type="notation:Node" xmi:id="_sqkRwGfLEe224dcZil_GAg" type="3003">
+        <children xmi:type="notation:DecorationNode" xmi:id="_sqlf4GfLEe224dcZil_GAg" type="5003"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_sqkRwWfLEe224dcZil_GAg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_sqkRwmfLEe224dcZil_GAg" fontName="Segoe UI"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_sqkRw2fLEe224dcZil_GAg"/>
+        <element xmi:type="concreta:Para" href="default.concreta#//@listUserStorys.0/@thePara"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sqkRxGfLEe224dcZil_GAg"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_hO3DeGfLEe2vkKAY6CZicQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_hO3DeWfLEe2vkKAY6CZicQ"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_hO2cYWfLEe2vkKAY6CZicQ"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_hO2cYmfLEe2vkKAY6CZicQ" fontName="Segoe UI"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_hO2cY2fLEe2vkKAY6CZicQ"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_hO2cZGfLEe2vkKAY6CZicQ"/>
+    <element xmi:type="concreta:UserStory" href="default.concreta#//@listUserStorys.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hO2cZWfLEe2vkKAY6CZicQ" x="144" y="84" width="730" height="367"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_N70M0WfIEe22fLdHkU1QUA"/>
+  <element xmi:type="concreta:Workspace" href="default.concreta#/"/>
+</notation:Diagram>

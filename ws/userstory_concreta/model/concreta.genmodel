@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/userstory_concreta/src" modelPluginID="userstory_concreta"
+    modelName="Concreta" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>concreta.emf</foreignModel>
+  <genPackages prefix="Concreta" disposableProviderFactory="true" ecorePackage="concreta.ecore#/">
+    <genClasses ecoreClass="concreta.ecore#//ModelFactory">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//ModelFactory/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//ModelFactory/ruta"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concreta.ecore#//ModelFactory/listWorkspace"/>
+    </genClasses>
+    <genClasses ecoreClass="concreta.ecore#//Workspace">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//Workspace/nombre"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concreta.ecore#//Workspace/listUserStorys"/>
+    </genClasses>
+    <genClasses ecoreClass="concreta.ecore#//UserStory">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//UserStory/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//UserStory/identificador"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//UserStory/estimacion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//UserStory/prioridad"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//UserStory/riesgo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//UserStory/responsable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//UserStory/iteracion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concreta.ecore#//UserStory/theComo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concreta.ecore#//UserStory/theQuiero"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concreta.ecore#//UserStory/thePara"/>
+    </genClasses>
+    <genClasses ecoreClass="concreta.ecore#//Como">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//Como/descripcion"/>
+    </genClasses>
+    <genClasses ecoreClass="concreta.ecore#//Quiero">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//Quiero/descripcion"/>
+    </genClasses>
+    <genClasses ecoreClass="concreta.ecore#//Para">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concreta.ecore#//Para/descripcion"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,20 @@
+package diagrama.model;
+
+import abstracta.ModelFactory;
+
+public class TransformacionTemplate {
+	
+	private abstracta.ModelFactory modelFactoryAbstracta;
+
+	public TransformacionTemplate(ModelFactory modelFactoryAbstracta) {
+		super();
+		this.modelFactoryAbstracta = modelFactoryAbstracta;
+	}
+
+	public void transformarTemplate() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

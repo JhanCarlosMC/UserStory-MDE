@@ -1,0 +1,36 @@
+@namespace(uri="abstracta",prefix="abstracta")
+
+package abstracta;
+
+class ModelFactory{
+	attr String nombre;
+	attr String ruta;
+	
+	val UserStory[*] listUserStorys;	
+	ref UserStory[*] listTodosUserStorys;
+}
+
+class UserStory{
+	attr String nombre;
+	attr String identificador;
+	attr String descripcion;
+	attr String estimacion;
+	attr String prioridad;
+	attr String riesgo;
+	
+	val Como theComo;
+	val Quiero theQuiero;
+	val Para thePara;
+}
+
+class Como{
+	attr String descripcion;
+}
+
+class Quiero{
+	attr String descripcion;
+}
+
+class Para{
+	attr String descripcion;
+}

@@ -1,0 +1,793 @@
+/**
+ */
+package concreta;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * @see concreta.ConcretaFactory
+ * @model kind="package"
+ * @generated
+ */
+public interface ConcretaPackage extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "concreta";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "concreta";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "concreta";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	ConcretaPackage eINSTANCE = concreta.impl.ConcretaPackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link concreta.impl.ModelFactoryImpl <em>Model Factory</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see concreta.impl.ModelFactoryImpl
+	 * @see concreta.impl.ConcretaPackageImpl#getModelFactory()
+	 * @generated
+	 */
+	int MODEL_FACTORY = 0;
+
+	/**
+	 * The feature id for the '<em><b>Nombre</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_FACTORY__NOMBRE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Ruta</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_FACTORY__RUTA = 1;
+
+	/**
+	 * The feature id for the '<em><b>List Workspace</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_FACTORY__LIST_WORKSPACE = 2;
+
+	/**
+	 * The number of structural features of the '<em>Model Factory</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_FACTORY_FEATURE_COUNT = 3;
+
+	/**
+	 * The meta object id for the '{@link concreta.impl.WorkspaceImpl <em>Workspace</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see concreta.impl.WorkspaceImpl
+	 * @see concreta.impl.ConcretaPackageImpl#getWorkspace()
+	 * @generated
+	 */
+	int WORKSPACE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Nombre</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKSPACE__NOMBRE = 0;
+
+	/**
+	 * The feature id for the '<em><b>List User Storys</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKSPACE__LIST_USER_STORYS = 1;
+
+	/**
+	 * The number of structural features of the '<em>Workspace</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORKSPACE_FEATURE_COUNT = 2;
+
+	/**
+	 * The meta object id for the '{@link concreta.impl.UserStoryImpl <em>User Story</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see concreta.impl.UserStoryImpl
+	 * @see concreta.impl.ConcretaPackageImpl#getUserStory()
+	 * @generated
+	 */
+	int USER_STORY = 2;
+
+	/**
+	 * The feature id for the '<em><b>Nombre</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_STORY__NOMBRE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Identificador</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_STORY__IDENTIFICADOR = 1;
+
+	/**
+	 * The feature id for the '<em><b>Descripcion</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_STORY__DESCRIPCION = 2;
+
+	/**
+	 * The feature id for the '<em><b>Estimacion</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_STORY__ESTIMACION = 3;
+
+	/**
+	 * The feature id for the '<em><b>Prioridad</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_STORY__PRIORIDAD = 4;
+
+	/**
+	 * The feature id for the '<em><b>Riesgo</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_STORY__RIESGO = 5;
+
+	/**
+	 * The feature id for the '<em><b>The Como</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_STORY__THE_COMO = 6;
+
+	/**
+	 * The feature id for the '<em><b>The Quiero</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_STORY__THE_QUIERO = 7;
+
+	/**
+	 * The feature id for the '<em><b>The Para</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_STORY__THE_PARA = 8;
+
+	/**
+	 * The number of structural features of the '<em>User Story</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_STORY_FEATURE_COUNT = 9;
+
+	/**
+	 * The meta object id for the '{@link concreta.impl.ComoImpl <em>Como</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see concreta.impl.ComoImpl
+	 * @see concreta.impl.ConcretaPackageImpl#getComo()
+	 * @generated
+	 */
+	int COMO = 3;
+
+	/**
+	 * The feature id for the '<em><b>Descripcion</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMO__DESCRIPCION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Como</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMO_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link concreta.impl.QuieroImpl <em>Quiero</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see concreta.impl.QuieroImpl
+	 * @see concreta.impl.ConcretaPackageImpl#getQuiero()
+	 * @generated
+	 */
+	int QUIERO = 4;
+
+	/**
+	 * The feature id for the '<em><b>Descripcion</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUIERO__DESCRIPCION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Quiero</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUIERO_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link concreta.impl.ParaImpl <em>Para</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see concreta.impl.ParaImpl
+	 * @see concreta.impl.ConcretaPackageImpl#getPara()
+	 * @generated
+	 */
+	int PARA = 5;
+
+	/**
+	 * The feature id for the '<em><b>Descripcion</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARA__DESCRIPCION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Para</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARA_FEATURE_COUNT = 1;
+
+
+	/**
+	 * Returns the meta object for class '{@link concreta.ModelFactory <em>Model Factory</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Model Factory</em>'.
+	 * @see concreta.ModelFactory
+	 * @generated
+	 */
+	EClass getModelFactory();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.ModelFactory#getNombre <em>Nombre</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Nombre</em>'.
+	 * @see concreta.ModelFactory#getNombre()
+	 * @see #getModelFactory()
+	 * @generated
+	 */
+	EAttribute getModelFactory_Nombre();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.ModelFactory#getRuta <em>Ruta</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ruta</em>'.
+	 * @see concreta.ModelFactory#getRuta()
+	 * @see #getModelFactory()
+	 * @generated
+	 */
+	EAttribute getModelFactory_Ruta();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link concreta.ModelFactory#getListWorkspace <em>List Workspace</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>List Workspace</em>'.
+	 * @see concreta.ModelFactory#getListWorkspace()
+	 * @see #getModelFactory()
+	 * @generated
+	 */
+	EReference getModelFactory_ListWorkspace();
+
+	/**
+	 * Returns the meta object for class '{@link concreta.Workspace <em>Workspace</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Workspace</em>'.
+	 * @see concreta.Workspace
+	 * @generated
+	 */
+	EClass getWorkspace();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.Workspace#getNombre <em>Nombre</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Nombre</em>'.
+	 * @see concreta.Workspace#getNombre()
+	 * @see #getWorkspace()
+	 * @generated
+	 */
+	EAttribute getWorkspace_Nombre();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link concreta.Workspace#getListUserStorys <em>List User Storys</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>List User Storys</em>'.
+	 * @see concreta.Workspace#getListUserStorys()
+	 * @see #getWorkspace()
+	 * @generated
+	 */
+	EReference getWorkspace_ListUserStorys();
+
+	/**
+	 * Returns the meta object for class '{@link concreta.UserStory <em>User Story</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>User Story</em>'.
+	 * @see concreta.UserStory
+	 * @generated
+	 */
+	EClass getUserStory();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.UserStory#getNombre <em>Nombre</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Nombre</em>'.
+	 * @see concreta.UserStory#getNombre()
+	 * @see #getUserStory()
+	 * @generated
+	 */
+	EAttribute getUserStory_Nombre();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.UserStory#getIdentificador <em>Identificador</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identificador</em>'.
+	 * @see concreta.UserStory#getIdentificador()
+	 * @see #getUserStory()
+	 * @generated
+	 */
+	EAttribute getUserStory_Identificador();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.UserStory#getDescripcion <em>Descripcion</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Descripcion</em>'.
+	 * @see concreta.UserStory#getDescripcion()
+	 * @see #getUserStory()
+	 * @generated
+	 */
+	EAttribute getUserStory_Descripcion();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.UserStory#getEstimacion <em>Estimacion</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Estimacion</em>'.
+	 * @see concreta.UserStory#getEstimacion()
+	 * @see #getUserStory()
+	 * @generated
+	 */
+	EAttribute getUserStory_Estimacion();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.UserStory#getPrioridad <em>Prioridad</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Prioridad</em>'.
+	 * @see concreta.UserStory#getPrioridad()
+	 * @see #getUserStory()
+	 * @generated
+	 */
+	EAttribute getUserStory_Prioridad();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.UserStory#getRiesgo <em>Riesgo</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Riesgo</em>'.
+	 * @see concreta.UserStory#getRiesgo()
+	 * @see #getUserStory()
+	 * @generated
+	 */
+	EAttribute getUserStory_Riesgo();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link concreta.UserStory#getTheComo <em>The Como</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>The Como</em>'.
+	 * @see concreta.UserStory#getTheComo()
+	 * @see #getUserStory()
+	 * @generated
+	 */
+	EReference getUserStory_TheComo();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link concreta.UserStory#getTheQuiero <em>The Quiero</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>The Quiero</em>'.
+	 * @see concreta.UserStory#getTheQuiero()
+	 * @see #getUserStory()
+	 * @generated
+	 */
+	EReference getUserStory_TheQuiero();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link concreta.UserStory#getThePara <em>The Para</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>The Para</em>'.
+	 * @see concreta.UserStory#getThePara()
+	 * @see #getUserStory()
+	 * @generated
+	 */
+	EReference getUserStory_ThePara();
+
+	/**
+	 * Returns the meta object for class '{@link concreta.Como <em>Como</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Como</em>'.
+	 * @see concreta.Como
+	 * @generated
+	 */
+	EClass getComo();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.Como#getDescripcion <em>Descripcion</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Descripcion</em>'.
+	 * @see concreta.Como#getDescripcion()
+	 * @see #getComo()
+	 * @generated
+	 */
+	EAttribute getComo_Descripcion();
+
+	/**
+	 * Returns the meta object for class '{@link concreta.Quiero <em>Quiero</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Quiero</em>'.
+	 * @see concreta.Quiero
+	 * @generated
+	 */
+	EClass getQuiero();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.Quiero#getDescripcion <em>Descripcion</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Descripcion</em>'.
+	 * @see concreta.Quiero#getDescripcion()
+	 * @see #getQuiero()
+	 * @generated
+	 */
+	EAttribute getQuiero_Descripcion();
+
+	/**
+	 * Returns the meta object for class '{@link concreta.Para <em>Para</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Para</em>'.
+	 * @see concreta.Para
+	 * @generated
+	 */
+	EClass getPara();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concreta.Para#getDescripcion <em>Descripcion</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Descripcion</em>'.
+	 * @see concreta.Para#getDescripcion()
+	 * @see #getPara()
+	 * @generated
+	 */
+	EAttribute getPara_Descripcion();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	ConcretaFactory getConcretaFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link concreta.impl.ModelFactoryImpl <em>Model Factory</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see concreta.impl.ModelFactoryImpl
+		 * @see concreta.impl.ConcretaPackageImpl#getModelFactory()
+		 * @generated
+		 */
+		EClass MODEL_FACTORY = eINSTANCE.getModelFactory();
+
+		/**
+		 * The meta object literal for the '<em><b>Nombre</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_FACTORY__NOMBRE = eINSTANCE.getModelFactory_Nombre();
+
+		/**
+		 * The meta object literal for the '<em><b>Ruta</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_FACTORY__RUTA = eINSTANCE.getModelFactory_Ruta();
+
+		/**
+		 * The meta object literal for the '<em><b>List Workspace</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL_FACTORY__LIST_WORKSPACE = eINSTANCE.getModelFactory_ListWorkspace();
+
+		/**
+		 * The meta object literal for the '{@link concreta.impl.WorkspaceImpl <em>Workspace</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see concreta.impl.WorkspaceImpl
+		 * @see concreta.impl.ConcretaPackageImpl#getWorkspace()
+		 * @generated
+		 */
+		EClass WORKSPACE = eINSTANCE.getWorkspace();
+
+		/**
+		 * The meta object literal for the '<em><b>Nombre</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WORKSPACE__NOMBRE = eINSTANCE.getWorkspace_Nombre();
+
+		/**
+		 * The meta object literal for the '<em><b>List User Storys</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORKSPACE__LIST_USER_STORYS = eINSTANCE.getWorkspace_ListUserStorys();
+
+		/**
+		 * The meta object literal for the '{@link concreta.impl.UserStoryImpl <em>User Story</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see concreta.impl.UserStoryImpl
+		 * @see concreta.impl.ConcretaPackageImpl#getUserStory()
+		 * @generated
+		 */
+		EClass USER_STORY = eINSTANCE.getUserStory();
+
+		/**
+		 * The meta object literal for the '<em><b>Nombre</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_STORY__NOMBRE = eINSTANCE.getUserStory_Nombre();
+
+		/**
+		 * The meta object literal for the '<em><b>Identificador</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_STORY__IDENTIFICADOR = eINSTANCE.getUserStory_Identificador();
+
+		/**
+		 * The meta object literal for the '<em><b>Descripcion</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_STORY__DESCRIPCION = eINSTANCE.getUserStory_Descripcion();
+
+		/**
+		 * The meta object literal for the '<em><b>Estimacion</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_STORY__ESTIMACION = eINSTANCE.getUserStory_Estimacion();
+
+		/**
+		 * The meta object literal for the '<em><b>Prioridad</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_STORY__PRIORIDAD = eINSTANCE.getUserStory_Prioridad();
+
+		/**
+		 * The meta object literal for the '<em><b>Riesgo</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_STORY__RIESGO = eINSTANCE.getUserStory_Riesgo();
+
+		/**
+		 * The meta object literal for the '<em><b>The Como</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference USER_STORY__THE_COMO = eINSTANCE.getUserStory_TheComo();
+
+		/**
+		 * The meta object literal for the '<em><b>The Quiero</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference USER_STORY__THE_QUIERO = eINSTANCE.getUserStory_TheQuiero();
+
+		/**
+		 * The meta object literal for the '<em><b>The Para</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference USER_STORY__THE_PARA = eINSTANCE.getUserStory_ThePara();
+
+		/**
+		 * The meta object literal for the '{@link concreta.impl.ComoImpl <em>Como</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see concreta.impl.ComoImpl
+		 * @see concreta.impl.ConcretaPackageImpl#getComo()
+		 * @generated
+		 */
+		EClass COMO = eINSTANCE.getComo();
+
+		/**
+		 * The meta object literal for the '<em><b>Descripcion</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COMO__DESCRIPCION = eINSTANCE.getComo_Descripcion();
+
+		/**
+		 * The meta object literal for the '{@link concreta.impl.QuieroImpl <em>Quiero</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see concreta.impl.QuieroImpl
+		 * @see concreta.impl.ConcretaPackageImpl#getQuiero()
+		 * @generated
+		 */
+		EClass QUIERO = eINSTANCE.getQuiero();
+
+		/**
+		 * The meta object literal for the '<em><b>Descripcion</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUIERO__DESCRIPCION = eINSTANCE.getQuiero_Descripcion();
+
+		/**
+		 * The meta object literal for the '{@link concreta.impl.ParaImpl <em>Para</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see concreta.impl.ParaImpl
+		 * @see concreta.impl.ConcretaPackageImpl#getPara()
+		 * @generated
+		 */
+		EClass PARA = eINSTANCE.getPara();
+
+		/**
+		 * The meta object literal for the '<em><b>Descripcion</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARA__DESCRIPCION = eINSTANCE.getPara_Descripcion();
+
+	}
+
+} //ConcretaPackage

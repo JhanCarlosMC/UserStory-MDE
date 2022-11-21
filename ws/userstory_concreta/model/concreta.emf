@@ -1,0 +1,50 @@
+@namespace(uri="concreta",prefix="concreta")
+@gmf
+package concreta;
+
+class ModelFactory{
+	attr String nombre;
+	attr String ruta;
+	
+	val Workspace[*] listWorkspace;
+}
+
+@gmf.diagram
+class Workspace{
+	attr String nombre;
+
+	val UserStory[*] listUserStorys;	
+}
+
+@gmf.node(label = "nombre", color = "230,224,99", margin="1")
+class UserStory{
+	attr String nombre;
+	attr String identificador;
+	attr String estimacion;
+	attr String prioridad;
+	attr String riesgo;
+	attr String responsable;
+	attr String iteracion;
+	
+	@gmf.compartment(layout = "list")
+	val Como theComo;
+	@gmf.compartment(layout = "list")
+	val Quiero theQuiero;
+	@gmf.compartment(layout = "list")
+	val Para thePara;
+}
+
+@gmf.node(label = "descripcion", color = "230,224,99", figure="rectangle")
+class Como{
+	attr String descripcion;
+}
+
+@gmf.node(label = "descripcion", color = "230,224,99")
+class Quiero{
+	attr String descripcion;
+}
+
+@gmf.node(label = "descripcion", color = "230,224,99")
+class Para{
+	attr String descripcion;
+}

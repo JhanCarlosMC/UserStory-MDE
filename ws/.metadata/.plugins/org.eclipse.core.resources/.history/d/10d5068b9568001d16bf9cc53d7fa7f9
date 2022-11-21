@@ -1,0 +1,6 @@
+var attributeFigure = GmfGraph!Rectangle.all.
+    selectOne(r|r.name = 'LabelFigure');
+   
+// ... delete its border
+delete attributeFigure.border;    
+attributeFigure.outline = false;

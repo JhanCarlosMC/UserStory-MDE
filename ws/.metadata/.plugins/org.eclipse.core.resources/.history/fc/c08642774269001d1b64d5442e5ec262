@@ -1,0 +1,33 @@
+package diagrama.model;
+
+import java.io.FileOutputStream;
+
+import com.itextpdf.text.Document;
+import com.itextpdf.text.pdf.PdfWriter;
+
+import abstracta.ModelFactory;
+
+public class TransformacionTemplate {
+	
+	private abstracta.ModelFactory modelFactoryAbstracta;
+
+	public TransformacionTemplate(ModelFactory modelFactoryAbstracta) {
+		super();
+		this.modelFactoryAbstracta = modelFactoryAbstracta;
+	}
+
+	public void transformarTemplate() {
+		// TODO Auto-generated method stub
+		Document test = new Document();
+		
+		try {
+			String ruta = System.getProperty("user.home");
+			PdfWriter.getInstance(document, new FileOutputStream(arg0))
+//			https://www.youtube.com/watch?v=m0OpZvpM9d4&t=178s
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+
+}

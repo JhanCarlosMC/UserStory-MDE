@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<abstracta:ModelFactory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:abstracta="abstracta" listTodosUserStorys="//@listUserStorys.0 //@listUserStorys.1">
+  <listUserStorys nombre="Test2" identificador="Identificador" descripcion="Descripcion" estimacion="Estimacion" prioridad="Prioridad" riesgo="Riesgo">
+    <theComo descripcion="Como"/>
+    <theQuiero descripcion="Quiero"/>
+    <thePara descripcion="Para"/>
+  </listUserStorys>
+  <listUserStorys nombre="Test" identificador="Identificador" descripcion="Descripcion" estimacion="Estimacion" prioridad="Prioridad" riesgo="Riesgo">
+    <theComo descripcion="Como"/>
+    <theQuiero descripcion="Quiero"/>
+    <thePara descripcion="Para"/>
+  </listUserStorys>
+</abstracta:ModelFactory>

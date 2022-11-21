@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;userstory_abstracta&apos;&#x0D;&#x0A;- Original project: &apos;userstory_abstracta&apos;&#x0D;&#x0A;- Original element: &apos;abstracta.impl.WorkspaceImpl.java&apos;" description="Delete element" element1="/src&lt;abstracta.impl{WorkspaceImpl.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1668930372483" subPackages="false" version="1.0"/>
+</session>

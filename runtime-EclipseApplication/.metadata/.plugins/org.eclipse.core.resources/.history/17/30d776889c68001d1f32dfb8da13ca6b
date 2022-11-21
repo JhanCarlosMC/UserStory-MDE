@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concreta:ModelFactory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:concreta="concreta">
+  <listWorkspace>
+    <listUserStorys>
+      <theComo/>
+    </listUserStorys>
+  </listWorkspace>
+</concreta:ModelFactory>

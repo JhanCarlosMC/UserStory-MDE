@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:concreta="concreta" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_N70M0GfIEe22fLdHkU1QUA" type="Concreta" name="model.concreta_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_N70M0WfIEe22fLdHkU1QUA"/>
+  <element xmi:type="concreta:Workspace" href="default.concreta#/"/>
+</notation:Diagram>

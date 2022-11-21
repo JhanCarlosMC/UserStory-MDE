@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concreta:Workspace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:concreta="concreta">
+  <listUserStorys nombre="Test" identificador="1" descripcion="4242jlml" estimacion="2" prioridad="5">
+    <theComo/>
+    <theQuiero/>
+    <thePara/>
+  </listUserStorys>
+</concreta:Workspace>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concreta:ModelFactory xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:concreta="concreta">
+  <listWorkspace>
+    <listUserStorys nombre="Test" identificador="Identificador" descripcion="Descripcion" estimacion="Estimacion" prioridad="Prioridad" riesgo="Riesgo">
+      <theComo descripcion="Como"/>
+      <theQuiero/>
+      <thePara/>
+    </listUserStorys>
+  </listWorkspace>
+</concreta:ModelFactory>

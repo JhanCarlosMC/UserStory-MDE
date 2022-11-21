@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="concreta.UserStory"/>
+<fullyQualifiedTypeName name="abstracta.Como"/>
+<fullyQualifiedTypeName name="concreta.Workspace"/>
+<fullyQualifiedTypeName name="abstracta.AbstractaFactory"/>
+<fullyQualifiedTypeName name="com.itextpdf.text.Document"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.itextpdf.text.pdf.PdfWriter"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="diagrama.model.ModelFactoryModel"/>
+<fullyQualifiedTypeName name="abstracta.ModelFactory"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.DirectoryDialog"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Shell"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.SWT"/>
+<fullyQualifiedTypeName name="abstracta.UserStory"/>
+<fullyQualifiedTypeName name="diagrama.model.TransformacionTemplate"/>
+<fullyQualifiedTypeName name="diagrama.model.TransformacionM2D"/>
+</qualifiedTypeNameHistroy>
